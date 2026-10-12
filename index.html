@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antools - Awesome tools for Designer & Developer</title>
+    <!-- Font Awesome Ikonkalari -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/main.css">
+</head>
+<body>
+
+    <!-- Overlay mobil menyu uchun -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- 1. HEADER SECTION -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-square-poll-vertical"></i></div>
+                <span>antools.</span>
+            </a>
+
+            <nav class="nav-links" id="navMenu">
+                <button class="close-btn" id="closeBtn">&times;</button>
+                <a href="#home" class="active">Home</a>
+                <div class="dropdown">
+                    <a href="#categories">Categories <i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+                <a href="#collections">My Collections</a>
+                <a href="#blog">Blog</a>
+                <div class="mobile-auth">
+                    <a href="#" class="login-btn">Login</a>
+                    <a href="#" class="btn btn-primary">Sign Up</a>
+                </div>
+            </nav>
+
+            <div class="auth-buttons">
+                <a href="#" class="login-btn">Login</a>
+                <a href="#" class="btn btn-primary">Sign Up</a>
+            </div>
+
+            <div class="burger" id="burgerBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content animate-text">
+                <h1>Awesome tools for Designer & Developer<span class="dot">.</span></h1>
+                <p>Antool is a web collection of information on paid or free Design and Development tools</p>
+                
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" placeholder="Find more than 430+ tools...">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-illustration">
+                <div class="illustration-box">
+                    <div class="code-tag">{ }</div>
+                    <div class="ui-card card-1"></div>
+                    <div class="ui-card card-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. MOST POPULAR TOOLS SECTION -->
+    <section class="popular-tools" id="categories">
+        <div class="container">
+            <div class="section-header animate-text">
+                <h2>Most Popular Tools</h2>
+                <p>Tools for the best Designers and Developers most popularly used in the world</p>
+            </div>
+
+            <div class="tools-grid">
+                <!-- Figma Card -->
+                <div class="tool-card">
+                    <div class="card-header">
+                        <i class="fa-brands fa-figma tool-icon figma"></i>
+                        <div>
+                            <h3>FIGMA</h3>
+                            <span class="tag free">Free</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card-footer">
+                        <div class="actions">
+                            <button class="icon-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="icon-btn"><i class="fa-regular fa-folder-plus"></i></button>
+                        </div>
+                        <a href="#" class="visit-link">Visit</a>
+                    </div>
+                </div>
+
+                <!-- Sketch Card (Featured) -->
+                <div class="tool-card active-card">
+                    <div class="card-header">
+                        <i class="fa-brands fa-sketch tool-icon sketch"></i>
+                        <div>
+                            <h3>Sketch</h3>
+                            <span class="tag paid">Trial & Paid</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card-footer">
+                        <div class="actions">
+                            <button class="icon-btn active-icon"><i class="fa-solid fa-heart"></i></button>
+                            <button class="icon-btn"><i class="fa-regular fa-folder-plus"></i></button>
+                        </div>
+                        <a href="#" class="btn btn-primary sm">Visit</a>
+                    </div>
+                </div>
+
+                <!-- Visual Studio Code Card -->
+                <div class="tool-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-code tool-icon vscode"></i>
+                        <div>
+                            <h3>Visual Studio Code</h3>
+                            <span class="tag free">Free</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card-footer">
+                        <div class="actions">
+                            <button class="icon-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="icon-btn"><i class="fa-regular fa-folder-plus"></i></button>
+                        </div>
+                        <a href="#" class="visit-link">Visit</a>
+                    </div>
+                </div>
+
+                <!-- Notion Card -->
+                <div class="tool-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-square-N tool-icon notion"></i>
+                        <div>
+                            <h3>Notion</h3>
+                            <span class="tag paid">Free & Paid</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card-footer">
+                        <div class="actions">
+                            <button class="icon-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="icon-btn"><i class="fa-regular fa-folder-plus"></i></button>
+                        </div>
+                        <a href="#" class="visit-link">Visit</a>
+                    </div>
+                </div>
+
+                <!-- Slack Card -->
+                <div class="tool-card">
+                    <div class="card-header">
+                        <i class="fa-brands fa-slack tool-icon slack"></i>
+                        <div>
+                            <h3>Slack</h3>
+                            <span class="tag paid">Free & Paid</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card-footer">
+                        <div class="actions">
+                            <button class="icon-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="icon-btn"><i class="fa-regular fa-folder-plus"></i></button>
+                        </div>
+                        <a href="#" class="visit-link">Visit</a>
+                    </div>
+                </div>
+
+                <!-- Invision Card -->
+                <div class="tool-card">
+                    <div class="card-header">
+                        <i class="fa-brands fa-invision tool-icon invision"></i>
+                        <div>
+                            <h3>Invision</h3>
+                            <span class="tag paid">Free & Paid</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card-footer">
+                        <div class="actions">
+                            <button class="icon-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="icon-btn"><i class="fa-regular fa-folder-plus"></i></button>
+                        </div>
+                        <a href="#" class="visit-link">Visit</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-btn">
+                <button class="btn btn-outline">Load more</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. BRANDS SECTION -->
+    <section class="brands-section">
+        <div class="container brands-container">
+            <p class="brands-title">Trusted more than 150+ brand</p>
+            <div class="brands-logos">
+                <div class="brand-item"><i class="fa-brands fa-microsoft"></i> Microsoft</div>
+                <div class="brand-item"><i class="fa-brands fa-google"></i> Google</div>
+                <div class="brand-item"><i class="fa-brands fa-slack"></i> slack</div>
+                <div class="brand-item"><i class="fa-brands fa-wordpress"></i> WORDPRESS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. NEWCOMER TOOLS SECTION -->
+    <section class="newcomer-tools" id="collections">
+        <div class="container newcomer-container">
+            <div class="newcomer-info animate-text">
+                <h2>Newcomer Tools</h2>
+                <p>Wow! see the latest update of the most recommended tools from reliable designers and developers</p>
+                <button class="btn btn-primary">Explore more</button>
+            </div>
+
+            <div class="newcomer-grid">
+                <!-- Zeplin -->
+                <div class="tool-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-paper-plane tool-icon"></i>
+                        <div>
+                            <h3>Zeplin</h3>
+                            <span class="tag paid">Free & Paid</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card-footer">
+                        <div class="actions">
+                            <button class="icon-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="icon-btn"><i class="fa-regular fa-folder-plus"></i></button>
+                        </div>
+                        <a href="#" class="visit-link">Visit</a>
+                    </div>
+                </div>
+
+                <!-- PHPStorm (Featured) -->
+                <div class="tool-card active-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-code tool-icon"></i>
+                        <div>
+                            <h3>PHPStorm</h3>
+                            <span class="tag free">Free</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card-footer">
+                        <div class="actions">
+                            <button class="icon-btn active-icon"><i class="fa-solid fa-heart"></i></button>
+                            <button class="icon-btn"><i class="fa-regular fa-folder-plus"></i></button>
+                        </div>
+                        <a href="#" class="btn btn-primary sm">Visit</a>
+                    </div>
+                </div>
+
+                <!-- Toolbox -->
+                <div class="tool-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-toolbox tool-icon"></i>
+                        <div>
+                            <h3>Toolbox</h3>
+                            <span class="tag free">Free</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card-footer">
+                        <div class="actions">
+                            <button class="icon-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="icon-btn"><i class="fa-regular fa-folder-plus"></i></button>
+                        </div>
+                        <a href="#" class="visit-link">Visit</a>
+                    </div>
+                </div>
+
+                <!-- Procreate -->
+                <div class="tool-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-paint-brush tool-icon"></i>
+                        <div>
+                            <h3>Procreate</h3>
+                            <span class="tag paid">Paid</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="card-footer">
+                        <div class="actions">
+                            <button class="icon-btn"><i class="fa-regular fa-heart"></i></button>
+                            <button class="icon-btn"><i class="fa-regular fa-folder-plus"></i></button>
+                        </div>
+                        <a href="#" class="visit-link">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. TESTIMONIAL SLIDER SECTION -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="slider-container">
+                <button class="slider-arrow prev-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                
+                <div class="slider-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="slide active">
+                        <div class="slide-image">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=500" alt="Ronald Richards">
+                            <div class="person-badge">
+                                <h4>Ronald Richards</h4>
+                                <span>Product Manager</span>
+                            </div>
+                        </div>
+                        <div class="slide-content">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="slide-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=500" alt="Alex Turner">
+                            <div class="person-badge">
+                                <h4>Alex Turner</h4>
+                                <span>Lead UI/UX Designer</span>
+                            </div>
+                        </div>
+                        <div class="slide-content">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>Antools has completely transformed how our team searches for software. The curated collection saves us hours of searching every week!</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="slide-image">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=500" alt="Sophia Chen">
+                            <div class="person-badge">
+                                <h4>Sophia Chen</h4>
+                                <span>Fullstack Developer</span>
+                            </div>
+                        </div>
+                        <div class="slide-content">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>As a developer, finding the right tools quickly is essential. Antools is the best directory with accurate categorization and pricing filters.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="slider-arrow next-btn" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <!-- Dots -->
+            <div class="slider-dots" id="dotsContainer">
+                <span class="dot-item active" data-index="0"></span>
+                <span class="dot-item" data-index="1"></span>
+                <span class="dot-item" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. JOIN US (NEWSLETTER) SECTION -->
+    <section class="join-section" id="blog">
+        <div class="container">
+            <div class="join-content animate-text">
+                <h2>Become a contributor?</h2>
+                <p>Join us and get tips & tricks to become a great Designer and Developer</p>
+                
+                <form class="join-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Enter your email..." required>
+                    <button type="submit" class="btn btn-primary">Join Us</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col main-col">
+                <a href="#" class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-square-poll-vertical"></i></div>
+                    <span>antools.</span>
+                </a>
+                <p class="copyright">Copyright 2021. Antools</p>
+                <p class="footer-desc">Antool is a web collection of information on paid or free Design and Development tools</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="tel:+621987463">+621987463</a></li>
+                    <li>M Building, No.10 A</li>
+                    <li><a href="mailto:antools@awesome.com">antools@awesome.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Development</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Company Info</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Partners</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/JS/main.js"></script>
+</body>
+</html>
